@@ -1,1 +1,35 @@
 
+body {
+    
+}
+.inputDiv{
+border:2px solid grey ;
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    text-align:center ;
+    height:200px;
+}
+.buySell{
+width:100%;
+    display:flex;
+    gap:10px;
+    margin: 20px 10px;
+    display:center ;
+    justify-content:center;
+    align-items:center ;
+    
+}
+.buyBtn{
+    background-color:#00c04b;
+    border:0;
+}
+.sellBtn{
+background-color:#ff474c;
+border:0;
+}
+.buySell button{
+    padding:5px;
+    width:100px;
+    border-radius:5px;
+}
