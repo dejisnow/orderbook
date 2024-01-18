@@ -1,4 +1,3 @@
-
 body {
     
 }
@@ -28,8 +27,26 @@ width:100%;
 background-color:#ff474c;
 border:0;
 }
+.order__btn{
+    padding:10px;
+    width:100px;
+    margin-top:50px;
+    border:0;
+    background-color:#00c04b;
+    border-radius:10px;
+}
 .buySell button{
     padding:5px;
     width:100px;
     border-radius:5px;
 }
+
+.orderBtn__div{
+    display:grid;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+
+
