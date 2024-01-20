@@ -1,9 +1,10 @@
-
 window.onload=()=>{
     let range= document.getElementById("range")
     let displayValue = document.querySelector(".value")
+    let marginValue = document.querySelector(".margin")
         let orderBtn = document.querySelector(".order__btn")
     let buyBtn = document.querySelector(".buyBtn")
+    let inputValue = document.querySelector(".inputV")
     let sellBtn = document.querySelector(".sellBtn")
     
     buyBtn.addEventListener("click",()=>{
@@ -19,7 +20,9 @@ window.onload=()=>{
     
     
     range.addEventListener("input",()=>{
+      marginValue.innerHTML = inputValue.value === "" ? 0 : range.value * inputValue.value 
         displayValue.innerHTML = range.value
+        
     })
     
     
