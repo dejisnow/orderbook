@@ -9,6 +9,10 @@ border:2px solid grey ;
     text-align:center ;
     height:200px;
 }
+.marginDiv{
+margin-top:10px;
+    
+}
 .buySell{
 width:100%;
     display:flex;
