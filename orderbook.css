@@ -1,6 +1,9 @@
 body {
     
 }
+.mainDiv{
+    margin-top:50px;
+}
 .inputDiv{
 border:2px solid grey ;
     display:flex;
@@ -8,6 +11,31 @@ border:2px solid grey ;
     gap:5px;
     text-align:center ;
     height:200px;
+}
+.switch{
+    display:flex;
+    border:2px solid grey;
+    width:fit-content;
+    padding:2px;
+    gap:2px;
+    border-radius:5px;
+    background-color:#4eff2e;
+    
+}
+
+.light{
+background:white;
+padding:5px;
+border-radius:5px;
+
+
+    
+}
+.dark{
+background-color:grey;
+padding:5px;
+border-radius:5px;
+    
 }
 .marginDiv{
 margin-top:10px;
@@ -26,6 +54,11 @@ width:100%;
 .buyBtn{
     background-color:#00c04b;
     border:0;
+}
+.inputV{
+    padding:5px;
+    border-radius:5px;
+    border:1px solid green;
 }
 .sellBtn{
 background-color:#ff474c;
