@@ -3,8 +3,12 @@ let body = document.querySelector("body")
 let buttons = document.querySelectorAll("button")
     let range= document.getElementById("range")
     let inputV = document.querySelector(".inputV")
+      let marginValue = document.querySelector(".margin")
     let displayValue = document.querySelector(".value")
-    let marginValue = document.querySelector(".margin")
+      //Margin and Value Div
+    let valueDiv= document.querySelector(".valueDiv")
+     let marginDiv = document.querySelector(".marginDiv")
+  
         let orderBtn = document.querySelector(".order__btn")
     let buyBtn = document.querySelector(".buyBtn")
     let inputValue = document.querySelector(".inputV")
@@ -57,8 +61,8 @@ darkBtn.addEventListener("click",()=>{
     body.style.backgroundColor= "#121212"
     sellBtn.style.color= "#ffffff"
     buyBtn.style.color= "#ffffff"
-    displayValue.style.color= "#ffffff"
-    marginValue.style.color= "#ffffff"
+    valueDiv.style.color= "#ffffff"
+    marginDiv.style.color= "#ffffff"
 })
 lightBtn.addEventListener("click",()=>{
     body.style.backgroundColor= "#ffffff"
