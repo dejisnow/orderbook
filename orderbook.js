@@ -8,6 +8,8 @@ let buttons = document.querySelectorAll("button")
       //Margin and Value Div
     let valueDiv= document.querySelector(".valueDiv")
      let marginDiv = document.querySelector(".marginDiv")
+     
+         let avBalance = document.querySelector(".balance")
   
         let orderBtn = document.querySelector(".order__btn")
     let buyBtn = document.querySelector(".buyBtn")
@@ -16,6 +18,11 @@ let buttons = document.querySelectorAll("button")
     let lightBtn = document.querySelector(".light")
     let darkBtn = document.querySelector(".dark")
     
+    let prompter = prompt("What is your balance")
+ avBalance.innerHTML = prompter === ""? "$"+ 0 : parseInt(prompter).toLocaleString('en-US', {
+  style: 'currency',
+  currency: 'USD',
+});
     
     const number = 123456.789;
 const formattedNumber = number.toLocaleString('en-US', {
@@ -35,6 +42,10 @@ console.log(formattedNumber )
     sellBtn.addEventListener("click",()=>{
     orderBtn.style.backgroundColor = "#ff474c"
         orderBtn.innerHTML = "Sell"
+    })
+    
+    inputV.addEventListener("input",()=>{
+        
     })
     
     
@@ -59,6 +70,7 @@ range.addEventListener("input",()=>{
 
 darkBtn.addEventListener("click",()=>{
     body.style.backgroundColor= "#121212"
+    body.style.color= "#ffffff"
     sellBtn.style.color= "#ffffff"
     buyBtn.style.color= "#ffffff"
     valueDiv.style.color= "#ffffff"
@@ -66,6 +78,11 @@ darkBtn.addEventListener("click",()=>{
 })
 lightBtn.addEventListener("click",()=>{
     body.style.backgroundColor= "#ffffff"
+    body.style.color= "black"
+    sellBtn.style.color= "black"
+    buyBtn.style.color= "black"
+    valueDiv.style.color= "black"
+    marginDiv.style.color= "black"
     
     
 })
