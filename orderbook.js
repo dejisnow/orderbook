@@ -18,11 +18,47 @@ let buttons = document.querySelectorAll("button")
     let lightBtn = document.querySelector(".light")
     let darkBtn = document.querySelector(".dark")
     
+    //Margin Limit variables
+let lim1= document.querySelector(".lm1")
+let lim2= document.querySelector(".lm2")
+let lim3= document.querySelector(".lm3")
+let lim4= document.querySelector(".lm4")
+let limAll= document.querySelectorAll(".lm")
+    
+    
+    
+    //Balance Prompt
     let prompter = prompt("What is your balance")
  avBalance.innerHTML = prompter === ""? "$"+ 0 : parseInt(prompter).toLocaleString('en-US', {
   style: 'currency',
   currency: 'USD',
 });
+
+inputV.addEventListener("input",()=>{
+for (let i = 0; i < limAll .length; i++) {
+ let amount = inputV.value
+      if (amount >= (0.25 * prompter)){
+          limAll[0].style.color= "red";
+      }else{
+          limAll[0].style.color= "#00c04b";
+      }if (amount >= (0.5* prompter)){
+          limAll[1].style.color= "red";
+      }else{
+          limAll[1].style.color= "#00c04b";
+      }if (amount >= (0.75* prompter)){
+          limAll[2].style.color= "red";
+      }else{
+          limAll[2].style.color= "#00c04b";
+      }if (amount >= (0.99* prompter)){
+          limAll[3].style.color= "red";
+      }else{
+          limAll[3].style.color= "#00c04b";
+      }
+      
+      
+}
+        
+    })
     
     const number = 123456.789;
 const formattedNumber = number.toLocaleString('en-US', {
@@ -44,9 +80,8 @@ console.log(formattedNumber )
         orderBtn.innerHTML = "Sell"
     })
     
-    inputV.addEventListener("input",()=>{
-        
-    })
+    
+    
     
     
     inputV.addEventListener("input",()=>{
