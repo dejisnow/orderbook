@@ -1,21 +1,42 @@
 body {
     
 }
+
+.top__div{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+}
+.avB{
+    font-weight:700;
+}
+.balance{
+    font-weight:700;
+    color:#00c04b;
+}
+
 .mainDiv{
+
     margin-top:50px;
 }
+.margin__box{
+    display:flex;
+    justify-content:space-around;
+}
 .inputDiv{
-border:2px solid grey ;
+border:2px solid green;
     display:flex;
     flex-direction:column;
     gap:5px;
     text-align:center ;
-    height:200px;
+    height:250px;
 }
 .switch{
+
     display:flex;
     border:2px solid grey;
     width:fit-content;
+    height:fit-content;
     padding:2px;
     gap:2px;
     border-radius:5px;
@@ -31,6 +52,9 @@ border-radius:5px;
 
     
 }
+.valueDiv{
+    margin-top:5px;
+}
 .dark{
 background-color:grey;
 padding:5px;
@@ -38,8 +62,16 @@ border-radius:5px;
     
 }
 .marginDiv{
-margin-top:10px;
+margin-top:5px;
     
+}
+.marginDiv p{
+    font-size:17px;
+    font-weight:600;
+}
+.valueDiv p{
+    font-size:17px;
+    font-weight:600;
 }
 .buySell{
 width:100%;
@@ -84,6 +116,12 @@ border:0;
     align-items:center;
     
 }
+.lm{
+    color:#00c04b;
+}
+
+
+
 
 
 
